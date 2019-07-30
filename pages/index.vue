@@ -41,7 +41,7 @@
 export default {
   data() {
     return {
-      name: 'vue-tea',
+      name: 'spa-vue-tea',
       honeypot: 'honeypot',
       netlify: true,
       chosenTea: 'Earl Grey',
