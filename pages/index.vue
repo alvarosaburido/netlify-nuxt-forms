@@ -5,12 +5,12 @@
     </div>
     <div>
       <form
-        name="original"
+        :name="name"
         method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        :data-netlify="netlify"
+        :data-netlify-honeypot="honeypot"
       >
-        <input type="hidden" name="form-name" value="original" />
+        <input type="hidden" name="form-name" :value="name" />
         <div class="tea">
           <h2>Pick a Tea</h2>
           <label
@@ -41,6 +41,9 @@
 export default {
   data() {
     return {
+      name: 'cawabunga',
+      honeypot: 'honeypot',
+      netlify: true,
       chosenTea: 'Earl Grey',
       teaTypes: {
         'Earl Grey': 'London',
